@@ -1,0 +1,48 @@
+  <!-- Modal -->
+  <i class="fa fa-plus" style="font-size:36px" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3" method="POST" action="/">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="vh4@gmail.com">
+                </div>
+                <div class="col-md-6">
+                  <label for="nama" class="form-label">Password</label>
+                  <input name="nama" type="text" class="form-control" id="nama" placeholder="vh4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input name="alamat" type="text" class="form-control" id="inputAddress" placeholder="Jakarta III Main St">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input name="kota" type="text" class="form-control" id="inputCity" placeholder="Jakarta">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select name="negara" id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Indonesia</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input name="kodepos" type="text" class="form-control" id="inputZip" placeholder="54471">
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
