@@ -4,6 +4,23 @@ const route = require('./routes/web')
 const mongoose = require('mongoose')
 const expressLayouts = require('express-ejs-layouts');
 const path = require('path')
+const bodyparser = require('body-parser')
+const flash = require('connect-flash')
+const cookieparser = require('cookie-parser')
+const expresssession = require('express-session')
+
+
+//flash confg
+app.use(cookieparser('secret'))
+app.use(expresssession({
+    cookie: {maxAge:6000},
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}))
+
+app.use(flash())
+
 
 //layouting
 app.use(expressLayouts)
@@ -29,6 +46,8 @@ db.on('error',()=>{
     console.log('database tdak terhubung')
 })
 
+app.use(bodyparser.urlencoded({extended:true}))
+app.use(bodyparser.json())
 
 //running program
 const port = process.env.PORT || 3000;
