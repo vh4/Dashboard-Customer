@@ -31,7 +31,7 @@ app.set('views', path.join(__dirname,'/views/'))
 app.use(express.static(__dirname + '/public/'))
 
 //mongodb dabatabases
-const database  = "mongodb+srv://vh4:tony201m@cluster0.wra0o.mongodb.net/WPU_COBA?retryWrites=true&w=majority";
+const database  = "mongodb+srv://vh4:xxxxx@cluster0.wra0o.mongodb.net/WPU_COBA?retryWrites=true&w=majority";
 mongoose.connect(database, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
